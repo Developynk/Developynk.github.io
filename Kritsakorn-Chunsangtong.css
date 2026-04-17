@@ -1,10 +1,10 @@
 .u-section-1 {
-  background-image: linear-gradient(0deg, rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url("images/pexels-photo-4636769.jpeg");
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("images/pexels-photo-4636769.jpeg");
   background-position: 50% 50%;
 }
 
 .u-section-1 .u-sheet-1 {
-  min-height: 776px;
+  min-height: 846px;
 }
 
 .u-section-1 .u-image-1 {
@@ -180,7 +180,9 @@
   .u-section-1 .u-text-3 {
     width: auto;
   }
-}.u-section-2 {
+}
+
+.u-section-2 {
   background-image: none;
 }
 
@@ -478,6 +480,7 @@
     min-height: 100px;
   }
 }
+
 .u-section-4 {
   background-image: none;
 }
@@ -716,7 +719,9 @@
   .u-section-4 .u-layout-cell-3 {
     min-height: 46px;
   }
-}.u-section-5 {
+}
+
+.u-section-5 {
   background-image: none;
 }
 
@@ -923,7 +928,9 @@
   .u-section-5 .u-layout-wrap-1 {
     width: 340px;
   }
-}.u-section-6 {
+}
+
+.u-section-6 {
   background-image: none;
 }
 
@@ -1009,7 +1016,9 @@
   .u-section-6 .u-text-4 {
     width: 340px;
   }
-}.u-section-7 {
+}
+
+.u-section-7 {
   background-image: none;
 }
 
@@ -1221,7 +1230,9 @@
   .u-section-7 .u-layout-cell-3 {
     min-height: 76px;
   }
-}.u-section-8 {
+}
+
+.u-section-8 {
   background-image: none;
 }
 
@@ -1251,7 +1262,9 @@
   .u-section-8 .u-text-1 {
     width: 340px;
   }
-}.u-section-9 {
+}
+
+.u-section-9 {
   background-image: none;
 }
 
@@ -1288,17 +1301,17 @@
 }
 
 .u-section-9 .u-text-1 {
-  text-shadow: 2px 2px 1px rgba(0,0,0,0.8);
+  text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.8);
   margin: 32px 0 0;
 }
 
 .u-section-9 .u-text-2 {
-  text-shadow: 2px 2px 4px rgba(0,0,0,0.65);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.65);
   margin: 5px 0 0;
 }
 
 .u-section-9 .u-text-3 {
-  box-shadow: -2px 0 1px 0 rgba(0,0,0,0);
+  box-shadow: -2px 0 1px 0 rgba(0, 0, 0, 0);
   font-weight: 700;
   letter-spacing: normal;
   margin: 5px 0 0;
@@ -1313,12 +1326,12 @@
 }
 
 .u-section-9 .u-text-5 {
-  text-shadow: 2px 2px 1px rgba(0,0,0,0.8);
+  text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.8);
   margin: 20px 0 0;
 }
 
 .u-section-9 .u-text-6 {
-  text-shadow: 2px 2px 4px rgba(0,0,0,0.65);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.65);
   margin: 5px 0 0;
 }
 
@@ -1840,7 +1853,9 @@
   }
 
   .u-section-kbtg .u-text-9 {
-    margin: /*15px 0px*/ 0px;
+    margin:
+      /*15px 0px*/
+      0px;
   }
 
   .u-section-kbtg .u-layout-cell-3 {
@@ -1848,7 +1863,9 @@
   }
 
   .u-section-kbtg .u-text-10 {
-    margin: /*15px 0px*/ 0px;
+    margin:
+      /*15px 0px*/
+      0px;
   }
 }
 
