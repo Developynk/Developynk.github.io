@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en" style="font-size: 16px;">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kritsakorn Chunsangtong — Resume</title>
+  <meta name="description" content="Resume of Kritsakorn Chunsangtong — Team Lead with 15+ years in banking software engineering.">
+  <meta name="theme-color" content="#478ac9">
+  <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900|Open+Sans:300,400,600,700,800">
+  <style>
+    /* ===== Reset & Base ===== */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Roboto', 'Open Sans', Arial, sans-serif;
+      color: #333;
+      background: #fff;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+    a { color: #478ac9; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    /* ===== Print-friendly A4 wrapper ===== */
+    .resume-page {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    /* ===== Header / Hero ===== */
+    .resume-header {
+      background: linear-gradient(135deg, #478ac9 0%, #2c5f8a 100%);
+      color: #fff;
+      padding: 48px 0 40px;
+      text-align: center;
+      position: relative;
+    }
+    .resume-header::after {
+      content: '';
+      position: absolute;
+      bottom: -30px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 60px;
+      height: 60px;
+      background: #fff;
+      border-radius: 50%;
+      border: 4px solid #478ac9;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      z-index: 2;
+    }
+    .resume-header h1 {
+      font-size: 2rem;
+      font-weight: 700;
+      letter-spacing: 1px;
+      margin-bottom: 4px;
+    }
+    .resume-header .subtitle {
+      font-size: 1.125rem;
+      font-weight: 400;
+      opacity: 0.9;
+      margin-bottom: 16px;
+    }
+    .contact-row {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+      font-size: 0.875rem;
+      opacity: 0.92;
+    }
+    .contact-row span { display: inline-flex; align-items: center; gap: 6px; }
+
+    /* ===== Section titles ===== */
+    .section-title {
+      font-size: 1.125rem;
+      font-weight: 700;
+      color: #478ac9;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      border-bottom: 2px solid #478ac9;
+      padding-bottom: 6px;
+      margin: 36px 0 18px;
+    }
+
+    /* ===== Summary ===== */
+    .summary {
+      background: #f7f9fc;
+      border-left: 4px solid #478ac9;
+      padding: 16px 20px;
+      margin-top: 50px;
+      font-size: 0.95rem;
+      color: #555;
+      text-align: justify;
+      line-height: 1.7;
+      border-radius: 0 6px 6px 0;
+    }
+
+    /* ===== Experience ===== */
+    .experience-item {
+      margin-bottom: 24px;
+      page-break-inside: avoid;
+    }
+    .exp-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    .exp-company {
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: #2c5f8a;
+    }
+    .exp-date {
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: #8aab3e;
+      white-space: nowrap;
+    }
+    .exp-role {
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: #1a3a5c;
+      margin: 2px 0 6px;
+    }
+    .exp-note {
+      font-size: 0.82rem;
+      color: #888;
+      font-style: italic;
+      margin-bottom: 4px;
+    }
+    .exp-bullets {
+      list-style: none;
+      padding: 0;
+    }
+    .exp-bullets li {
+      position: relative;
+      padding-left: 18px;
+      margin-bottom: 4px;
+      font-size: 0.88rem;
+      color: #444;
+      text-align: justify;
+    }
+    .exp-bullets li::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 8px;
+      width: 8px;
+      height: 8px;
+      background: #478ac9;
+      border-radius: 50%;
+    }
+    .exp-projects {
+      font-size: 0.82rem;
+      color: #666;
+      margin-top: 6px;
+      padding-left: 18px;
+    }
+    .exp-projects strong { color: #478ac9; }
+
+    /* ===== Skills ===== */
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 16px;
+    }
+    .skill-category h4 {
+      font-size: 0.85rem;
+      font-weight: 700;
+      color: #2c5f8a;
+      margin-bottom: 6px;
+    }
+    .skill-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+    .skill-tag {
+      display: inline-block;
+      background: #e9f0f8;
+      color: #2c5f8a;
+      font-size: 0.78rem;
+      font-weight: 500;
+      padding: 3px 10px;
+      border-radius: 12px;
+      border: 1px solid #c8d9ec;
+    }
+
+    /* ===== Education ===== */
+    .edu-item {
+      margin-bottom: 14px;
+    }
+    .edu-item .exp-company { font-size: 0.95rem; }
+    .edu-degree {
+      font-size: 0.88rem;
+      color: #1a3a5c;
+      font-weight: 500;
+    }
+    .edu-faculty {
+      font-size: 0.82rem;
+      color: #888;
+    }
+
+    /* ===== Footer ===== */
+    .resume-footer {
+      text-align: center;
+      padding: 24px 0 32px;
+      font-size: 0.78rem;
+      color: #aaa;
+      border-top: 1px solid #e8e8e8;
+      margin-top: 36px;
+    }
+    .resume-footer a { color: #478ac9; }
+
+    /* ===== Download button ===== */
+    .download-btn {
+      display: inline-block;
+      background: #fff;
+      color: #478ac9;
+      font-weight: 600;
+      font-size: 0.8rem;
+      padding: 6px 18px;
+      border-radius: 20px;
+      border: 1.5px solid rgba(255,255,255,0.6);
+      margin-top: 12px;
+      transition: all 0.3s;
+    }
+    .download-btn:hover {
+      background: rgba(255,255,255,0.15);
+      color: #fff;
+      text-decoration: none;
+    }
+
+    /* ===== Divider line between experience items ===== */
+    .experience-item + .experience-item {
+      border-top: 1px solid #e8e8e8;
+      padding-top: 20px;
+    }
+
+    /* ===== Responsive ===== */
+    @media (max-width: 600px) {
+      .resume-header h1 { font-size: 1.5rem; }
+      .contact-row { flex-direction: column; align-items: center; gap: 6px; }
+      .exp-header { flex-direction: column; }
+      .skills-grid { grid-template-columns: 1fr; }
+    }
+
+    /* ===== Print ===== */
+    @media print {
+      body { font-size: 11pt; }
+      .resume-header { padding: 24px 0 20px; }
+      .resume-header::after { display: none; }
+      .summary { margin-top: 20px; }
+      .section-title { margin: 20px 0 10px; }
+      .download-btn { display: none; }
+      .resume-footer { display: none; }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header class="resume-header">
+    <div class="resume-page">
+      <h1>Kritsakorn Chunsangtong</h1>
+      <p class="subtitle">Team Lead &middot; Advanced Software Engineer</p>
+      <div class="contact-row">
+        <span>📞 098-534-9655</span>
+        <span>✉️ leftypinkg@gmail.com</span>
+        <span>📍 Bangkok, Thailand</span>
+      </div>
+      <a href="files/2026/KritsakornChunsangtong.pdf" class="download-btn" target="_blank">⬇ Download Full CV</a>
+    </div>
+  </header>
+
+  <main class="resume-page">
+
+    <!-- ===== SUMMARY ===== -->
+    <p class="summary">
+      A Team Lead with over 15 years in the banking industry, focused on developing and stabilizing essential financial systems. Proven expertise in technical architecture, solution design, and team leadership. Committed to sustainable efficiency through clear understanding of both technical and business needs, with a track record of delivering robust, production-grade solutions on time.
+    </p>
+
+    <!-- ===== EXPERIENCE ===== -->
+    <h2 class="section-title">Work Experience</h2>
+
+    <div class="experience-item">
+      <div class="exp-header">
+        <span class="exp-company">Kasikorn Business-Technology Group (KBTG)</span>
+        <span class="exp-date">Oct 2022 — Present</span>
+      </div>
+      <p class="exp-role">Advanced Software Engineer (Team Lead)</p>
+      <ul class="exp-bullets">
+        <li>Eliminated critical back-office system performance bottlenecks, removing the need for mid-day service restarts and ensuring seamless 24/7 business operations.</li>
+        <li>Achieved zero recurring IT problems in Inward Remittance [API] domain by 2024 through structural root cause analysis.</li>
+        <li>Formulated architectural roadmap for Inward Remittance [SWIFT], securing approval from Solution-Architecture forums.</li>
+        <li>Delivered downstream system enhancements 2 weeks ahead of schedule, providing additional capacity for critical CRs.</li>
+        <li>Orchestrated large-scale customer migration with zero production incidents, maintaining full data integrity.</li>
+        <li>Architected data-mart integration for 400+ tables to Data Warehouse within a 2-week development cycle.</li>
+      </ul>
+      <p class="exp-projects"><strong>Projects:</strong> Global Payment System (GPS) — Inward Remittance [API], [SWIFT], Remittance for CIPs</p>
+    </div>
+
+    <div class="experience-item">
+      <div class="exp-header">
+        <span class="exp-company">Infinitas by Krungthai Co., Ltd.</span>
+        <span class="exp-date">Jul 2021 — Aug 2022</span>
+      </div>
+      <p class="exp-role">Associate Director (Team Lead, System Analysis)</p>
+      <ul class="exp-bullets">
+        <li>Led requirement discussions with Product Owners and cross-team negotiations to ensure on-time project delivery.</li>
+        <li>Managed sprint planning and daily stand-ups for a 20-member frontend, backend, and tester team.</li>
+        <li>Migrated SBM Wallet and Corporate Bond Wallet from on-premise to Google Cloud Platform within 2 months.</li>
+        <li>Supported production issues through incident investigation, classification, and resolution.</li>
+      </ul>
+      <p class="exp-projects"><strong>Projects:</strong> Paotang (Bond) — SBM Wallet, Corporate Bond Wallet</p>
+    </div>
+
+    <div class="experience-item">
+      <div class="exp-header">
+        <span class="exp-company">TN Incorporation Co., Ltd.</span>
+        <span class="exp-date">Jan 2019 — Jun 2021</span>
+      </div>
+      <p class="exp-role">Senior Java Programmer</p>
+      <p class="exp-note">Outsource at Apar Technologies (Thailand) Co., Ltd.</p>
+      <ul class="exp-bullets">
+        <li>Developed new banking systems under tight deadlines using both Struts 1.2.9 and Spring Boot 2.</li>
+        <li>Coached team members on Spring Boot 2, conducted code reviews, and enforced quality via SonarQube.</li>
+        <li>Researched and introduced new tools and solutions to improve development efficiency.</li>
+      </ul>
+      <p class="exp-projects"><strong>Projects:</strong> Write Off System (WO), Litigation System API, Collateral Management System API, Loan Origination System, LDAP API</p>
+    </div>
+
+    <div class="experience-item">
+      <div class="exp-header">
+        <span class="exp-company">KBTG / Azure Computers (Thailand)</span>
+        <span class="exp-date">May 2018 — Dec 2018</span>
+      </div>
+      <p class="exp-role">Senior Java Programmer</p>
+      <ul class="exp-bullets">
+        <li>Built information reports and dashboards for the Consumer Loan Origination system; tuned SQL performance.</li>
+      </ul>
+      <p class="exp-projects"><strong>Projects:</strong> Formula Lending Process (FLP)</p>
+    </div>
+
+    <div class="experience-item">
+      <div class="exp-header">
+        <span class="exp-company">Krungthai Bank PCL (KTB)</span>
+        <span class="exp-date">Apr 2015 — May 2018</span>
+      </div>
+      <p class="exp-role">Developer Officer</p>
+      <ul class="exp-bullets">
+        <li>Maintained and enhanced nationwide commercial loan origination systems (BCL, BCM, CBC).</li>
+        <li>Led development teams including outsource analysts; designed database tables and RESTful microservices.</li>
+        <li>Managed ETL data extraction to Data Warehouse department.</li>
+      </ul>
+      <p class="exp-projects"><strong>Projects:</strong> Commercial Loan Origination System, CAPM, Referral Customer System, Commercial Loan Data Mart</p>
+    </div>
+
+    <div class="experience-item">
+      <div class="exp-header">
+        <span class="exp-company">Krungthai Computer Services (KTBCS)</span>
+        <span class="exp-date">Sep 2012 — Mar 2015</span>
+      </div>
+      <p class="exp-role">Java Programmer</p>
+      <ul class="exp-bullets">
+        <li>Enhanced banking systems in the commercial loan origination domain; reviewed and merged source code.</li>
+        <li>Collaborated closely with test teams and users on end-to-end implementation processes.</li>
+      </ul>
+    </div>
+
+    <div class="experience-item">
+      <div class="exp-header">
+        <span class="exp-company">Cube Softtech Co., Ltd.</span>
+        <span class="exp-date">Apr 2011 — Apr 2012</span>
+      </div>
+      <p class="exp-role">Java Developer</p>
+      <ul class="exp-bullets">
+        <li>Developed web applications using Java, Struts, Spring, Hibernate, and MySQL/Oracle.</li>
+      </ul>
+    </div>
+
+    <!-- ===== SKILLS ===== -->
+    <h2 class="section-title">Technical Skills</h2>
+    <div class="skills-grid">
+      <div class="skill-category">
+        <h4>Languages &amp; Frameworks</h4>
+        <div class="skill-tags">
+          <span class="skill-tag">Java 5–8</span>
+          <span class="skill-tag">Spring Boot</span>
+          <span class="skill-tag">Spring</span>
+          <span class="skill-tag">Struts</span>
+          <span class="skill-tag">Hibernate</span>
+          <span class="skill-tag">JPA</span>
+          <span class="skill-tag">JSP / JSTL</span>
+        </div>
+      </div>
+      <div class="skill-category">
+        <h4>Databases</h4>
+        <div class="skill-tags">
+          <span class="skill-tag">Oracle</span>
+          <span class="skill-tag">PostgreSQL</span>
+          <span class="skill-tag">DB2</span>
+          <span class="skill-tag">MySQL</span>
+          <span class="skill-tag">PL/SQL</span>
+        </div>
+      </div>
+      <div class="skill-category">
+        <h4>Infrastructure &amp; Tools</h4>
+        <div class="skill-tags">
+          <span class="skill-tag">Google Cloud Platform</span>
+          <span class="skill-tag">JBoss EAP</span>
+          <span class="skill-tag">Tomcat</span>
+          <span class="skill-tag">Maven</span>
+          <span class="skill-tag">Swagger</span>
+          <span class="skill-tag">SonarQube</span>
+          <span class="skill-tag">Git / SVN</span>
+          <span class="skill-tag">Shell Script</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===== EDUCATION ===== -->
+    <h2 class="section-title">Education</h2>
+
+    <div class="edu-item">
+      <div class="exp-header">
+        <span class="exp-company">Thammasat University</span>
+        <span class="exp-date">2015 — 2017</span>
+      </div>
+      <p class="edu-degree">Master of Science in Information Technology Policy and Management (CIO)</p>
+      <p class="edu-faculty">College of Innovation</p>
+    </div>
+
+    <div class="edu-item">
+      <div class="exp-header">
+        <span class="exp-company">Suan Dusit Rajabhat University</span>
+        <span class="exp-date">2006 — 2010</span>
+      </div>
+      <p class="edu-degree">Bachelor of Science in Computer Science</p>
+      <p class="edu-faculty">Faculty of Science and Technology</p>
+    </div>
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="resume-footer">
+    <p>Full interactive CV available at <a href="index.html">index.html</a></p>
+  </footer>
+
+</body>
+
+</html>
